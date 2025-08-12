@@ -14,7 +14,7 @@ public class BubleSort {
         int[] arrayInt = { 2, 6, 11, 12, 0, 7, 5, 1 };
         bubleSort(arrayInt);
         for (int i : arrayInt) {
-            System.err.println(i);
+            System.out.println(i);
         }
     }
 
