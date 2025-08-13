@@ -1,4 +1,4 @@
-package tasks.algorithms;
+package tasks.algorithms.sorts;
 
 public class InsertionSort {
     /*
