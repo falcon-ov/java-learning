@@ -10,8 +10,9 @@ public class BinarySearch {
         int low = 0;
         int high = array.length - 1;
         int midElement;
+        int mid;
         while (low <= high) {
-            int mid = (low + high) / 2;
+            mid = (low + high) / 2;
             midElement = array[mid];
             if(midElement == num){
                 return mid;
