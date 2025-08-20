@@ -36,6 +36,7 @@ public class AlgorithmD {
         while (node != null) {
             int cost = costs.get(node);
             HashMap<String, Integer> neighbors = graph.get(node);
+
             if (!neighbors.isEmpty()) {
                 for (String n : neighbors.keySet()) {
                     int new_cost = cost + neighbors.get(n);
@@ -48,12 +49,16 @@ public class AlgorithmD {
             processed.add(node);
             node = findLowestCostNode(costs, processed);
         }
-        System.out.println("RESULT-"+costs.get("fin"));
+        System.out.println("MinWeightPath - "+costs.get("fin"));
         String temp = "fin";
         while (temp != null) {
-            System.out.print(temp+" <- ");
+            System.out.print(temp);
             temp = parents.get(temp);
+            if(temp != null){
+                System.out.print(" <- ");
+            }
         }
+        System.out.println();
     }
 
     public static String findLowestCostNode(HashMap<String, Integer> costs, ArrayList<String> processed) {
