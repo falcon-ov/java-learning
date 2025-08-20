@@ -2,7 +2,6 @@ package tasks.algorithms.searches;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Arrays;
 
 public class AlgorithmD {
     public static void main(String[] args) {
