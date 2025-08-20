@@ -36,13 +36,6 @@ public class AlgorithmD {
         while (node != null) {
             int cost = costs.get(node);
             HashMap<String, Integer> neighbors = graph.get(node);
-            //
-            System.out.println("40"+node);
-            for (String item : processed) {
-                System.out.println(item);
-            }
-            System.out.println(processed.size());
-            //
             if (!neighbors.isEmpty()) {
                 for (String n : neighbors.keySet()) {
                     int new_cost = cost + neighbors.get(n);
