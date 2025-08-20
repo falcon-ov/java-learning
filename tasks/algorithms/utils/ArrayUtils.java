@@ -21,4 +21,12 @@ public class ArrayUtils {
         }
         return newArr;
     }
+
+    public static int[] array_slice(int[] arr, int low, int high){
+        int[] newArr = new int[high - low + 1];
+        for(int i = low, j = 0; i <= high ;i++, j++){
+            newArr[j] = arr[i];
+        }
+        return newArr;
+    }
 }
